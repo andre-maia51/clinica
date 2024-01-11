@@ -1,0 +1,182 @@
+.consultas {
+    margin: 0 auto;
+}
+
+.dia {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.dia__titulo {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--cinza-titulo);
+    margin-top: 2rem;
+}
+
+.dia__agendadas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.dia__agendadas__card {
+    min-width: 320px;
+    max-width: 600px;
+    background-color: var(--branco);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.card__paciente {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.card__paciente__pfp {
+    border-radius: 100%;
+    width: 15%;
+}
+
+.card__paciente__info__nome {
+    color: var(--cinza-titulo);
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+
+.card__paciente__info__tipo {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.card__paciente__info__tipo__texto {
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: var(--cinza-texto);
+}
+
+.card__icon-chat {
+    display: flex;
+    background-color: var(--cinza-fundo-icon);
+    border-radius: 100%;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+.card__icon-chat__icon {
+    padding: 0.5rem;
+}
+
+hr {
+    margin: 0;
+    background-color: var(--cinza-titulo);
+    height: 1px;
+    opacity: 0.1;
+}
+
+.info__consulta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.info__consulta__horario {
+    font-weight: 500;
+    color: var(--cinza-titulo);
+    font-size: 0.75rem;
+    padding: 0 2rem;
+}
+
+.info__consulta__botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.12rem;
+    padding: 0 2rem;
+}
+
+.botao__videochamada {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    color: var(--branco);
+    background-color: var(--laranja);
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 16px 0px rgba(255, 176, 80, 0.16);
+    padding: 0.8rem 1rem;
+}
+
+.botao__chamada {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    color: var(--cinza-titulo);
+    border-radius: 0.5rem;
+    background-color: var(--branco);
+    border: 1px solid var(--borda-botao);
+    padding: 0.8rem 1rem;
+}
+
+.botao__endereco {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    color: var(--branco);
+    background-color: var(--azul);
+    box-shadow: 0px 4px 16px 0px rgba(72, 148, 255, 0.16);
+    border-radius: 0.5rem;
+    padding: 0.8rem 3rem;
+    width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+    .dia__agendadas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .dia__agendadas__card {
+        min-width: 400px;
+    }
+} 
+
+@media screen and (min-width: 1400px) {
+    .dia__agendadas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .dia__agendadas__card {
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .dia__agendadas {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

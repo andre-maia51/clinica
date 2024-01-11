@@ -1,0 +1,133 @@
+.cadastro-consulta {
+    display: none;
+}
+
+@media screen and (min-width: 1400px) {
+    .cadastro-consulta {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .cadastro-consulta__titulo {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--cinza-titulo);
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .grupo {
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .campo {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .form__title {
+        font-weight: 400;
+        font-size: 0.8rem;
+        color: vaR(--cinza-titulo-form);
+    }
+    
+    .input-text {
+        border-radius: 0.5rem;
+        outline: 1px solid var(--borda-botao);
+        padding: 1rem;
+        background: var(--branco);
+        color: var(--cinza-titulo-form);
+    }
+    
+    .input-text::placeholder {
+        font-weight: 400;
+        font-size: 1rem;
+        color: var(--cinza-placeholder);
+    }
+    
+    .input-text:hover {
+        transition: 0.2s;
+        outline: 1px solid var(--cinza-placeholder);
+    }
+    
+    .input-text:focus {
+        transition: 0.2s;
+        outline: 2px solid var(--azul);
+    } 
+    
+    #tipo {
+        border-radius: 0.5rem;
+        padding: 1rem;
+        outline: 1px solid var(--borda-botao);
+        background: var(--branco);
+    }
+    
+    #tipo:hover {
+        transition: 0.2s;
+        outline: 1px solid var(--cinza-placeholder);
+    }
+    
+    #tipo:focus {
+        transition: 0.2s;
+        outline: 2px solid var(--azul);
+    }
+    
+    #obs {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        outline: 1px solid var(--borda-botao);
+        background: var(--branco);
+        color: var(--cinza-titulo-form);
+    }
+    
+    #obs::placeholder {
+        color: var(--cinza-placeholder);
+    }
+    
+    #obs:hover {
+        transition: 0.2s;
+        outline: 1px solid var(--cinza-placeholder);
+    }
+    
+    #obs:focus {
+        transition: 0.2s;
+        outline: 2px solid var(--azul);
+    }
+    
+    .form__button {
+        cursor: pointer;
+        margin: 0 auto;
+        width: 40%;
+        padding: 1rem;
+        color: var(--branco);
+        background-color: var(--azul);
+        border-radius: 0.5rem;
+    }
+    
+    .form__button:hover {
+        transition: 0.4s ease;
+        background-color: var(--azul-hover);
+    }
+    
+    .form__button:focus {
+        transition: 0.4s ease;
+        border: 1px solid var(--azul-focus-border);
+        background-color: var(--azul-focus-bg);
+    }
+    
+    .form__button:active {
+        transition: 0.4s ease;
+        border: 1px solid var(--azul-pressed-border);
+        background-color: var(--azul-pressed-bg);
+    }
+}

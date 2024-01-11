@@ -1,0 +1,32 @@
+.cabecalho__perfil-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 3rem;
+    margin-top: 2rem;
+    min-width: 350px;
+}
+
+.cabecalho__perfil-user__pfp {
+    border-radius: 100%;
+    width: 6rem;
+    height: 6rem;
+}
+
+.cabecalho__perfil-user__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.cabecalho__perfil-user__info__titulo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--cinza-titulo);
+}
+
+.cabecalho__perfil-user__info__texto {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--cinza-texto);
+}

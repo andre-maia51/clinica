@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url(cabecalho.css);
+@import url(card.css);
+@import url(rodape.css);
+@import url(menu-lateral.css);
+@import url(form.css);
+
+:root {
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --cinza-hora: #333333;
+    --cinza-titulo: #464646;
+    --cinza-texto: #A3A3A3;
+    --cinza-op-base: #ADADAD;
+    --cinza-fundo-icon: #F6F6F6;
+    --cinza-titulo-form: #898989;
+    --cinza-placeholder: #CFCFCF;
+    --borda-botao: #ECECEC;
+    --laranja: #FFB050;
+    --azul: #4894FF;
+    --azul-hover: #4786F0;
+    --azul-pressed-bg: #4373DC;
+    --azul-pressed-border: #57A4FF;
+    --azul-focus-bg: #4373DC;
+    --azul-focus-border: #4894FF;
+
+    --fonte: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+    background: linear-gradient(166deg, #F8F4FF 0%, #EFF0F4 100%);
+    font-family: var(--fonte);
+}
+
